@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Batlló</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        
+        <div>
+            <h1 tabindex="1">Casa Batlló</h1><!-- Hay etiquetas que reciben foco de forma predeterminada:
+                -- a, button, input
+                Pero otras no:
+                -- h1, h2, h3, h4, h5, h6, p, span, img
+                Para que reciban foco y puedan ser detectadas 
+                por el lector de pantalla utilizamos el atributo tabindex.
+                tabindex="1" hace que este elemento reciba foco y sea además el primero de todos.
+                tabindex="0" da foco, pero el orden de lectura será la secuencia del código. -->
+            <h2 tabindex="1">Una obra maestra de la arquitectura modernista</h2>
+            <a tabindex="2" id="skip-link" href="#gaudi">Avanzar al contenido</a> <!-- El skip-link es una forma de crear un atajo 
+                para las personas que se desplazan con el tabulador.
+                Haremos que sea invisible desde la pantalla, excepto 
+                cuando reciba el foco. -->
+            <nav id="inicio" role="navigation">
+                <ul>
+                    <li><a href="#gaudi">ANTONI GAUDÍ</a></li>
+                    <li><a href="#edificio">EL EDIFICIO</a></li>
+                    <li><a href="#galeria">GALERÍA</a></li>
+                    <li><a href="#modernismo">EL MODERNISMO</a></li>
+                    <li><a href="#opinion">SU OPINIÓN</a></li>
+                </ul>
+            </nav>
+            <img tabindex="0" src="img/346983-Casa-Batllo.webp" alt="Acceso a Casa Batlló."> <!-- La imagen recibe foco gracias al tabindex.
+                El lector podrá acceder al contenido escrito en alt -->
+        </div>
+
+    </header>
+
+
+    <main>
+        <section class="container">
+            <img tabindex="0"src="img/foto_Gaudi_400x510.jpg" alt="Fotografía de Antoni Gaudí de 1878"> <!-- La imagen recibe foco gracias al tabindex.
+                El lector podrá acceder al contenido escrito en alt -->
+            <div id="gaudi">
+                <h3 tabindex="0">Antoni Gaudí</h3>
+                <p tabindex="0">Gaudí fue un arquitecto con un sentido innato de la geometría y el
+                    volumen, así como una gran capacidad imaginativa que le permitía
+                    proyectar mentalmente la mayoría de sus obras antes de pasarlas a
+                    planos. De hecho, pocas veces realizaba planos detallados de sus
+                    obras; prefería recrearlos sobre maquetas tridimensionales,
+                    moldeando todos los detalles según los iba ideando mentalmente. En
+                    otras ocasiones, iba improvisando sobre la marcha, dando
+                    instrucciones a sus colaboradores sobre lo que debían hacer.
+                </p>
+                <p tabindex="0">Dotado de una fuerte intuición y capacidad creativa, Gaudí
+                    concebía sus edificios de una forma global, atendiendo tanto a las
+                    soluciones estructurales como a las funcionales y decorativas.
+                    Estudiaba hasta el más mínimo detalle de sus creaciones,
+                    integrando en la arquitectura toda una serie de trabajos
+                    artesanales que dominaba él mismo a la perfección: cerámica,
+                    vidriería, forja de hierro, carpintería, etc. Asimismo, introdujo
+                    nuevas técnicas en el tratamiento de los materiales, como su
+                    famoso trencadís hecho con piezas de cerámica de desecho.
+                </p>
+                <p><a href="#inicio">Volver al Menu &#8593</a></p>
+            </div>
+
+            <div id="edificio">
+                <h3 tabindex="0">El edificio</h3>
+                <p tabindex="0">La Casa Batlló es un reflejo de la plenitud artística de Gaudí:
+                    pertenece a su etapa naturalista (primera década del siglo XX),
+                    periodo en que el arquitecto perfecciona su estilo personal,
+                    inspirándose en las formas orgánicas de la naturaleza, para lo que
+                    puso en práctica toda una serie de nuevas soluciones estructurales
+                    originadas en los profundos análisis efectuados por Gaudí de la
+                    geometría reglada. A ello añade el artista catalán una gran
+                    libertad creativa y una imaginativa creación ornamental: partiendo
+                    de cierto barroquismo sus obras adquieren gran riqueza
+                    estructural, de formas y volúmenes desprovistos de rigidez
+                    racionalista o de cualquier premisa clásica.
+                </p>
+                <p tabindex="0">Sin embargo, como es habitual en las obras de Gaudí, el diseño y
+                    la innegable artisticidad del conjunto no privan de que el
+                    edificio esté concebido bajo el prisma de la funcionalidad, a la
+                    que el arquitecto subordina todos los demás elementos. En ese
+                    sentido, cabe resaltar la importancia otorgada tanto a la
+                    iluminación como a la ventilación, dos ejes básicos para una vida
+                    sana y confortable en un edificio de viviendas. Para ello dispuso
+                    un gran patio central en el centro del edificio, al que daban las
+                    habitaciones de servicios, mientras que los salones y los
+                    dormitorios daban a la fachada. Este patio también articulaba el
+                    movimiento dentro del edificio, a través de escaleras y un
+                    ascensor.
+                </p>
+                <p class="volver-inicio"><a href="#inicio">Volver al Menu &#8593</a></p>
+            </div>
+            <img tabindex="0" src="img/fachada-590x760.png"
+                alt="La fachada de la Casa Batlló destaca por su mosaico y los balcones en forma de máscaras venecianas."><!-- La imagen recibe foco gracias al tabindex.
+                    El lector podrá acceder al contenido escrito en alt -->
+        </section>
+        <section id="galeria" class="container">
+            <h3 tabindex="0">Galería de imágenes</h3>
+            <div class="image-grid">
+                <img tabindex="0" src="img/salon.webp" alt="El espacio más relevante era el salón principal, con un techo en forma de cielo 
+                raso de formas helicoidales en relieve, y donde destacaba el gran ventanal de la 
+                tribuna que daba al paseo de Gracia, decorado con vidrieras en forma de disco de 
+                diferentes colores.">
+                <img tabindex="0" src="img/detall.avif" alt="Una gran lámpara circular remata la espiral del cielo raso.">
+                <img tabindex="0" src="img/pati2.webp" alt="El patio está revestido de azulejos, con una ingeniosa gradación de color desde 
+                el azul de la parte superior hasta el blanco de la inferior, para mejor 
+                aprovechamiento de la luz, lo que provoca la sensación de estar en una cueva submarina.">
+                <img tabindex="0" src="img/terrat.webp" alt="Una de las interpretaciones simbólicas que se ha dado a esta fachada es la de 
+                San Jorge luchando con el dragón, cuyas víctimas se hallan en la fachada 
+                representadas por las columnas en forma de hueso y los balcones en forma de calavera. 
+                Así, la cruz de cuatro brazos sería la espada clavada en el espinazo del animal, 
+                del que brotaría la sangre, presente en la cerámica roja de esta parte de la cubierta.">
+            </div>
+            <p class="volver-inicio"><a href="#inicio">Volver al Menu &#8593</a></p>
+        </section>
+        <section id="modernismo" class="container">
+            <h3 tabindex="0">El modernismo</h3>
+            <div class="content">
+                <img tabindex="0" src="img/casa_mila.webp" alt="La fachada de la casa mila destaja por sus balcones curvos de piedra y la forja de hierro.">
+                <div id="gaudi">
+                    <p tabindex="0">El modernismo rechaza el estilo poco atractivo de la arquitectura
+                        industrial de la primera mitad del siglo XIX, y desarrolla nuevos
+                        conceptos arquitectónicos basados en la naturaleza, que consisten
+                        en los materiales de construcción que se emplean, en las formas de
+                        los edificios y en las figuras de sus fachadas. Los arquitectos y
+                        sus escultores colocan en el exterior de los edificios pájaros,
+                        mariposas, hojas y flores a modo de elementos decorativos, ya sea
+                        como figuras adosadas o como adorno de la piedra o cerámica.
+                        También se colocan figuras de tamaño mayor, animales fabulosos o
+                        personas, y en las cornisas elementos de cerámica de color. Las
+                        ventanas y los balcones disponen de rejas de hierro forjado, que
+                        son labradas artísticamente y contienen motivos inspirados en la
+                        naturaleza.
+                    </p>
+                    <p tabindex="0">Los arquitectos aprovecharon los materiales nuevos y
+                        reconvirtieron el uso de los ya conocidos. Algunos comunes en el
+                        modernismo fueron el hierro (muy presente en diversas obras,
+                        dejando la herrería al descubierto), la cerámica, el vidrio, los
+                        cristales, la madera, el yeso, la piedra, los ladrillos y la
+                        pintura entre otros, también se reintegró la escultura a la
+                        arquitectura como una de sus principales cualidades.         
+                    </p>
+                    <p class="volver-inicio"><a href="#inicio">Volver al Menú &#8593</a></p>
+                </div>
+            </div>
+        </section>
+
+    
+
+        <footer>
+            <section class="section-form" id="opinion">
+                <form class="container">
+                    <fieldset>
+                        <legend tabindex="0">Por favor, denos su opinión</legend>
+                        <p tabindex="0">Es necesario rellenar todos los campos</p>
+                        <label>Su Nombre <input type="text" required aria-required="true" /> </label>
+                        <label>Su opinión <input type="text" required aria-required="true" />
+                        </label>
+                        <div>
+                            <button class="boton" type="submit">Enviar opinión</button>
+                        </div>
+                    </fieldset>
+                    <section id="siguenos">
+                        <div class="content">
+                            <div class="social-media">
+                                <p tabindex="0">Nuestras redes sociales</p>
+                                <ul>
+                                    <li>
+                                        <a tabindex="0" href="https://facebook.com" aria-label="Enlace a Facebook"><img src="img/c_facebook.png" alt="" /></a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0" href="https://instagram.com" aria-label="Enlace a Instagram"><img src="img/c_instagram.png" alt="" /></a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="0" href="https://youtube.com" aria-label="Enlace a Youtube"><img src="img/c_youtube.png" alt="" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                <p tabindex="0">&#169Francisco_Rubén</p>
+                                <p class="volver-inicio"><a href="#inicio">Volver al Menú &#8593</a></p>
+                            </div>
+                        </div>
+                    </section>
+                    
+            </section>
+        </footer>
+
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>

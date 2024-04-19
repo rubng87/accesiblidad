@@ -1,0 +1,265 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+    font-size: 1.2rem;
+}
+
+:root {
+    --primary-color: rgb(223, 196, 173);
+    --secondary-color: white;
+    --text-color: black;
+    --titulos-nav-color: #651A1A;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+/* header================================================================================================================ */
+
+header {
+    background-color: var(--primary-color);
+    margin-bottom: 3rem;
+    
+ 
+}
+
+header div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header div img {
+    width: 100%;
+}
+
+h1, h2 {
+    font-family: "Marcellus", cursive;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+  
+h3 {
+    color: var(--titulos-nav-color);
+    border-bottom: 5px solid var(--titulos-nav-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+  
+/* nav================================================================================================================ */
+
+nav {
+border-top: 5px solid var(--titulos-nav-color);
+   border-bottom: 5px solid var(--titulos-nav-color);
+   margin-bottom: 3rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 1rem;
+    
+    color: var(--titulos-nav-color);
+    &:hover {
+      background-color: var(--titulos-nav-color);
+      color: white;
+    }
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+
+/* main================================================================================================================ */
+
+main section.container:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    
+  }
+
+section img {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.image-grid img {
+    max-width: 100%;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h3 {
+    margin-top: 0;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content img {
+    max-width: 45%;
+}
+
+#gaudi {
+    flex: 1;
+    padding-left: 20px;
+}
+
+#gaudi p {
+    margin-top: 0; 
+}
+
+.volver-inicio {
+    margin-top: 20px; 
+}
+
+
+
+/* footer================================================================================================================ */
+
+.section-form {
+
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+  
+    h2 {
+      text-align: center;
+    }
+}
+  
+
+
+.section-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  
+    fieldset {
+      padding: 1rem;
+    }
+  
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      text-align: right;
+    }
+  
+    button {
+      padding: 0.5rem 3rem;
+      background-color: var(--primary-color);
+      color: var(--titulos-nav-color);
+      width: 100%;
+    }
+  
+    button:hover {
+      background-color: var(--titulos-nav-color);
+      border-color: var(--secondary-color);
+      color: white;
+    }
+  
+    
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+}
+
+.social-media {
+    margin-right: 20px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    
+}
+
+ul li {
+    display: inline-block;
+}
+
+
+ul li img {
+    width: 80px;
+    height: auto; 
+}
+
+/* skiplink================================================================================================================ */
+
+
+
+/* El skip-link sirve para crear un elemento invisible
+  desde la pantalla a menos que reciba foco */
+  #skip-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  
+  #skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
